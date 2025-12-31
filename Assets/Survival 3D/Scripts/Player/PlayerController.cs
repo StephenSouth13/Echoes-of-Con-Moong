@@ -61,9 +61,9 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 dir = transform.forward * currentMovementInput.y + transform.right * currentMovementInput.x;
         dir *= moveSpeed;
-        dir.y = rig.velocity.y;
+        dir.y = rig.linearVelocity.y;
 
-        rig.velocity = dir;
+        rig.linearVelocity = dir;
 
     }
 
